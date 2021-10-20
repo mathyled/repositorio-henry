@@ -20,5 +20,13 @@ function financial(x) {
 // hay que usar el objeto nativo Number()
  Ej:        Number("1");  // 1 
 
+// String.prototype.charAt()
+charAt()  
+var quote = "Stay awhile and listen!";
 
+console.log(quote[6]); // "w"
 
+// Alternativamente, puede usar el charAt()método de String
+//  para acceder a caracteres individuales. 
+//  Por ejemplo, quote.charAt(6)también volvería "w". 
+ 
