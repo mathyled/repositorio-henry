@@ -30,3 +30,27 @@ console.log(quote[6]); // "w"
 //  para acceder a caracteres individuales. 
 //  Por ejemplo, quote.charAt(6)también volvería "w". 
  
+/// MAXIMO VALOR 
+
+// Haciendo un ejercicio , saqué como hacer el Math.max() de manera
+// manual
+var inputArray = [3, 6, -2, -5, 7, 3]; //da 7(max)
+
+function adjacentElementsProduct(inputArray) {
+  var newArray=[];
+     for(var i=0; i<inputArray.length;i++){
+       if(inputArray[i]>newArray) {newArray=+inputArray[i]}
+     }
+return newArray;
+}
+console.log(adjacentElementsProduct(inputArray))
+
+
+// otra manera seria ..
+
+var max = Math.max(...inputArray);
+console.log(max) // da 7
+// sino 
+var max = Math.max(3, 6, -2, -5, 7, 3); // sin corchetes
+
+
