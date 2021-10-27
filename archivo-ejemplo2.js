@@ -54,3 +54,23 @@ console.log(max) // da 7
 var max = Math.max(3, 6, -2, -5, 7, 3); // sin corchetes
 
 
+//buscando si el Objeto tiene cierta Propiedad
+Object.prototype.hasOwnProperty()
+
+//sintaxis obj.hasOwnProperty(prop)
+
+//........................................
+
+// numeros aleatorios enteros 
+
+function randomWholeNum() {
+
+  return Math.floor(Math.random()*20); // redondeo al numero mas cercano con .floor
+}                                      // me dá un numero aleatorio entre 0 a 20(exepto este)
+
+
+console.log(randomWholeNum())
+
+
+
+
