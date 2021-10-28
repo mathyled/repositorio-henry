@@ -49,7 +49,9 @@ console.log(adjacentElementsProduct(inputArray))
 // otra manera seria ..
 var inputArray = [3, 6, -2, -5, 7, 3]; 
 
-var max = Math.max(...inputArray);// SPREAD OPERADOR (...)//cuando una funcion es invocada , reparte sus argumentos(manda n cantidad de parametros que no esten declarados directamente)
+//SPREAD OPERADOR (...)//cuando una funcion es invocada ,
+// reparte sus argumentos(manda n cantidad de parametros que no esten declarados directamente)
+var max = Math.max(...inputArray);
 console.log(max) // da 7
 // sino 
 var max = Math.max(3, 6, -2, -5, 7, 3); // sin corchetes
