@@ -1,0 +1,49 @@
+.relative {
+    
+    position: relative;
+   border:blue 3px solid;
+   top:-10px;
+   left:20px;
+   background-color:white;
+   width:500px;
+}
+
+.fixed { 
+    position:fixed;
+    bottom: 0;
+    right:0;
+    width:200px;
+    background-color:white;
+    border:#f0a 3px solid;
+}
+
+.absolute { 
+    position: absolute;
+    top:20px;
+    right:0;
+    width:300px;
+    height:200px;
+    border:turquoise 4px solid;
+    background-color:white;
+}
+
+.static { 
+    position:static;
+    border:violet 4px dashed;
+}
+
+img { 
+    float:left;
+    border-style: outset;
+    border-color: sandybrown;
+    border-width: 4px;
+    width: 50%;
+}
+
+p { 
+    border:yellowgreen 4px double;
+    width:50%;
+    
+    overflow:auto;
+
+}

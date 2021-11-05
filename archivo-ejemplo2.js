@@ -51,10 +51,14 @@ var inputArray = [3, 6, -2, -5, 7, 3];
 
 //SPREAD OPERADOR (...)//cuando una funcion es invocada ,
 // reparte sus argumentos(manda n cantidad de parametros que no esten declarados directamente)
-var max = Math.max(...inputArray);
+var max = Math.max(...inputArray);//devuelve array "desempaquetado" --> (3, 6, -2, -5, 7, 3)
 console.log(max) // da 7
 // sino 
 var max = Math.max(3, 6, -2, -5, 7, 3); // sin corchetes
+
+//otra manera es usando el operador de propagacion apply()
+var arr = [6, 89, 3, 45];
+var maximus = Math.max.apply(null, arr);
 
 
 //buscando si el Objeto tiene cierta Propiedad
