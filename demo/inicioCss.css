@@ -20,13 +20,19 @@ li {
     margin-right: 25px;
 }
 
-a {
+.titular a:hover{
+   
+    background-color:#0a89eb ;
+}
+
+.titular a {
     text-decoration: none;
     font-size: 17px;
     background-color: #5cb8ff;
     padding: 20px 30px;
    color: snow;
 }
+
 .titular {
     text-align:center;
     margin-top: 200px;
@@ -47,6 +53,17 @@ header {
 }
 
 /* Arranca Seccion Sobre Mi*/
+.contenedor-sobremi a {
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #5cb8ff;
+    padding: 20px 30px;
+   color: snow;
+}
+
+.contenedor-sobremi a:hover{
+     background-color:#0a89eb ;
+}
 
 h3 {
     text-align:center;
