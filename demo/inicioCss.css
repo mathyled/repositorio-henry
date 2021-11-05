@@ -54,7 +54,7 @@ h3 {
     font-size:40px;
 }
 
-img {
+.contenedor-sobremi img {
     width: 400px;
     height: 350px;
 }
@@ -71,4 +71,36 @@ img {
 }
 .final {
     margin-bottom: 30px;
+ }
+
+ /* servicios  */
+
+ .contenedor-servicios {
+     display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }
+
+ .servicio {
+   width: 23%;
+   padding: 38px;
+   border-radius: 10px;
+   margin-bottom: 40px;
+   color: white;
+ }
+
+ .violeta {
+     background-color: #a46cda;
+ }
+
+ .celeste {
+     background-color: cornflowerblue;
+ }
+ .servicio h4 {
+     font-size: 30px;
+     margin:0;
+ }
+
+ .servicio img {
+     float: right;
  }
