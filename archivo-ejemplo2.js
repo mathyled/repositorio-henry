@@ -80,4 +80,25 @@ console.log(randomWholeNum())
 
 
 
+//-----------------------------------------------------
+
+// Pasar valores por referencia
+// donde cualquier cambio que hagamos a esa referencia,
+//  se va a ver reflejado en el objeto original
+
+
+// Un matrimonio , donde lo mio es tuyo
+var misCosas = ["patineta","rauqeta","pelota","botines","camiseta"];
+
+var susCosas=misCosas;
+
+//Si mi pareja dona 
+
+ susCosas.pop();
+ susCosas.pop();
+
+console.log(misCosas)//["patineta","rauqeta","pelota"]
+
+// un arreglo también es un objeto
+
 
