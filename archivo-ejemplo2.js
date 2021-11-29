@@ -101,4 +101,12 @@ console.log(misCosas)//["patineta","rauqeta","pelota"]
 
 // un arreglo también es un objeto
 
+//...................................................
+
+
+if(true) {
+  console.log("Es verdadero") // Es verdadero
+  }
+  //tambien se podria escribir como
+  true && console.log("Es verdadero") // Es verdadero
 
