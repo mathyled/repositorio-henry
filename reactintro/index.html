@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+      <div id="saludo"></div>
+      <div id="raiz"></div>
+      <script type="text/babel">
+          //componente de clase
+   class Saludo extends React.Component {
+       render () {
+           return (
+               <div> Hola , Soy Mati ! </div>
+           )
+       }
+   };
+   // componente de funcion
+
+   function Despedida(){
+       return (
+           <div> Chau , nos vemos ! </div>
+       )
+   }
+
+
+//  Este método recibe como parámetro el componente que queremos incluir al DOM, y en qué lugar del mismo. 
+
+// Por lo tanto le pasamos nuestro componente (<HelloWorld />), y un selector document.getElementById('app') para indicarle donde agregarlo.
+
+//    ReactDOM.render(< Saludo />, document.getElementById("saludo"))
+   ReactDOM.render(< Despedida />, document.getElementById("saludo"))
+
+
+
+// dentro del Componente vamos a tener un objeto que se encuentra en this.props que va a contener todas las props que le hayamos dado a ese Componente.
+   class HelloWorld extends React.Component {
+  render(){
+    return (
+      <div>
+        Hola, {this.props.name} {this.props.s}!!
+      </div>
+    )
+  }
+};
+
+const nombreVariable = 'Mati';
+const saludo1 = "Como estas";
+//Las props funcionan como los atributos HTML
+
+//las props son innmutables !!
+const element = <HelloWorld name={nombreVariable} s={saludo1}/>
+
+ReactDOM.render(
+    element,
+    document.getElementById('saludo')
+ );
+
+
+// let familia= ["agus", "viki", "patri", "glo", "koro", "ani"];
+
+// let miLista= familia.map(function(item){
+//   return <li>{item}</li>;
+// });
+
+// ReactDOM.render(
+//   <ul>{miLista}</ul>,
+//   document.getElementById("raiz")
+// )
+
+
+function FamiliaLista(props){
+  const familia= props.familia;
+  const miLista= familia.map((item)=> <li key={item.id}>{item}</li>);
+
+  return (
+    <ul>{miLista}</ul>
+  )
+};
+
+let familia= ["agus", "viki", "patri", "glo", "koro", "ani"];
+
+ReactDOM.render( <FamiliaLista familia={familia}/>,
+                  document.getElementById("raiz")   
+ )
+      </script>
+  </body>
+</html>
